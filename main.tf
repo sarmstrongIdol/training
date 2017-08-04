@@ -43,7 +43,7 @@ resource "aws_instance" "web" {
   instance_type          = "t2.micro"
   subnet_id              = "subnet-f0e85097"
   vpc_security_group_ids = ["sg-b2a021ca"]
-  count                  = "2"
+  count                  = "3"
 
   tags {
     "Identity" = "Idol-training-lynx"
